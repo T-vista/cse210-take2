@@ -31,7 +31,7 @@ class Program
 
         Console.WriteLine($"Sum: {sum}");
 
-        int avg = sum / numbers.Count;
+        float avg = sum / numbers.Count;
 
         Console.WriteLine($"Average: {avg}");
 
