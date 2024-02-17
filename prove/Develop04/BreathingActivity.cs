@@ -11,6 +11,9 @@ public class BreathingActivity : Activity
     // BreathingActivity breath = new BreathingActivity("Breathing Activity","This Activity will help you relax by focusing on your breathing, follow along with the pompts...", 0);
     public void Run()
     {
+        Console.Clear();
+        Console.WriteLine("Get Ready... \n");
+        ShowSpinner(5);
         for (int i = (_duration + 7)/8;i > 0; i--)
         {
             Console.Write("Breath in...");

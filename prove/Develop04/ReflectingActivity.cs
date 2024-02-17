@@ -26,16 +26,33 @@ public class ReflectingActivity : Activity
     public void DisplayPrompt()
     {
         Console.WriteLine("Consider the following prompt:\n");
-        Console.WriteLine($" -- {GetRandomQuestion()} -- \n");
+        Console.WriteLine($" -- {GetRandomPrompt()} -- \n");
         Console.WriteLine("When you have something in mind press enter to continue.");
         Console.ReadLine();
+        Console.Clear();
+        Console.WriteLine("Now ponder on each of the following questions as they relate to this experience\n");
+        Console.WriteLine($"You may begin in...\n");
+        ShowCountDown(5);
     }
     public void DisplayQuestion()
     {
-        Console.WriteLine($">{GetRandomQuestion()}");
+        for (int i = _duration/10; i > 0; i--)
+        {
+            Console.Write($">{GetRandomQuestion()}");
+            ShowSpinner(10);
+            Console.WriteLine(" ");
+        }
+        Console.Clear();
     }
     public void Run()
     {
-        
+        Console.WriteLine("Get Ready... \n");
+        ShowSpinner(5);
+        Console.Clear();
+        DisplayPrompt();
+        Console.Clear();
+        DisplayQuestion();
+
+
     }
 }

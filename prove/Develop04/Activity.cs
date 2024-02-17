@@ -24,7 +24,7 @@ public class Activity
     }
     public void DisplayEndingMessage()
     {
-        Console.WriteLine($"Congradulations you have completed {_duration} seconds of the {_name} activity");
+        Console.WriteLine($"Congratulations! you have completed {_duration} seconds of the {_name}!");
     }
     public void ShowSpinner(int seconds)
     {

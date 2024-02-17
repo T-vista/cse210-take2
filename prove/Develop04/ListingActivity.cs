@@ -36,9 +36,11 @@ public class ListingActivity : Activity
     public void Run()
     {
         Console.WriteLine("Get ready...");
-        base.ShowSpinner(3);
-        Console.WriteLine($"\nList as many responses as you can to the following prompt \n--{GetRandomPrompt()}-- \nBegin in");
-        ShowCountDown(5);
+        base.ShowSpinner(5);
+        Console.Clear();
+        Console.WriteLine($"\nList as many responses as you can to the following prompt \n\n--{GetRandomPrompt()}-- \n\nBegin in");
+        ShowCountDown(10);
+        Console.Clear();
         _count = GetListFromUser(_duration).Count;
         Console.WriteLine($"\nGreat job! you listed {_count} items!");
 
