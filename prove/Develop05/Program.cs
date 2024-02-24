@@ -1,9 +1,14 @@
 using System;
+using System.Diagnostics.Tracing;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop05 World!");
+        GoalManager.Start();
+
+        // GoalManager.CreateGoal();
+        // Console.WriteLine(GoalManager._goals);
+        // GoalManager.ListGoalDetails();
     }
 }
