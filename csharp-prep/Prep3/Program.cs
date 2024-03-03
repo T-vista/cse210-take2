@@ -4,23 +4,23 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Console.WriteLine("What is your magic number");
+        // Console.WriteLine("What's your magic number");
         // string num = Console.ReadLine();
         // int magicnum = int.Parse(num); 
         Random randomGenerator = new Random();
-        int magicnum = randomGenerator.Next(1, 101);
+        int magicNumber = randomGenerator.Next(1, 101);
         int guess = -1;
 
-        while (magicnum != guess)
+        while (magicNumber != guess)
         {
             Console.WriteLine("what is your guess?");
             guess = int.Parse(Console.ReadLine());
 
-            if (magicnum > guess)
+            if (magicNumber > guess)
             { 
                 Console.WriteLine("Higher");
             }
-            else if (magicnum < guess)
+            else if (magicNumber < guess)
             {
                 Console.WriteLine("Lower");
             }

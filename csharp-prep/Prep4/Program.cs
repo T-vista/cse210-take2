@@ -5,6 +5,7 @@ class Program
 {
     static void Main(string[] args)
     {
+        //print('enter a list of numbers, typ)
         Console.WriteLine("Enter a list of numbers, type 0 when finished");
 
         List<int> numbers;
@@ -35,17 +36,17 @@ class Program
 
         Console.WriteLine($"Average: {avg}");
 
-        int max = 0;
+        int maximum = 0;
 
         foreach (int i in numbers)
         {
-            if (i > max)
+            if (i > maximum)
             {
-                max = i;
+                maximum = i;
             }
         }
 
-        Console.WriteLine($"The largest number is: {max}");
+        Console.WriteLine($"The largest number is: {maximum}");
         
 
     }

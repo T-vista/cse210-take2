@@ -6,11 +6,13 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("What is your grade percentage?");
-        string number = Console.ReadLine();
-        int percentage = int.Parse(number);
+        string gradeNumber = Console.ReadLine();
+        int percentage = int.Parse(gradeNumber);
 
         string grade = " ";
         bool pass = false ;
+
+        //if else loop
 
         if (percentage >= 90)
         {
