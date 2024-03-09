@@ -28,8 +28,8 @@ public class Journal
     public static void SaveToFile()
     {
         Console.Write("Enter file name: ");
-        string _filename = Console.ReadLine();
-        System.IO.StreamWriter file = new System.IO.StreamWriter($"c:\\{_filename}.txt");
+        string _fileName = Console.ReadLine();
+        System.IO.StreamWriter file = new System.IO.StreamWriter($"c:\\{_fileName}.txt");
         foreach (string i in _entries)
         {
             file.WriteLine(i);
