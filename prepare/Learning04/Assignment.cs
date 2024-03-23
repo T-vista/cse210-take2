@@ -2,6 +2,7 @@ using System;
 
 public class Assignment
 {
+    //base class
     protected static string _studentName;
     protected static string _topic;
 
