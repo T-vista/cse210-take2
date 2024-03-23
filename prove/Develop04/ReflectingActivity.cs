@@ -11,8 +11,8 @@ public class ReflectingActivity : Activity
 
     public string GetRandomPrompt()
     {
-        Random rnd = new Random();
-        int r = rnd.Next(_prompts.Count);
+        Random rand = new Random();
+        int r = rand.Next(_prompts.Count);
         string s = _prompts[r];
         return s;
     }

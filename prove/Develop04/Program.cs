@@ -8,13 +8,13 @@ class Program
         ListingActivity list = new ListingActivity("Listing Activity", "In this activity you will create a list of all the things you can think of that satisfy the prompt", 10);
         ReflectingActivity reflect = new ReflectingActivity("Reflecting Activity", "This activity will help you reflect on your acomplishments and focus on your successes", 30);
 
-        string choice = "0";
-        while (choice!= "4")
+        string selection = "0";
+        while (selection!= "4")
         {
             Console.Clear();
             Console.WriteLine("Menu Options\n1. Start Breathing Activity\n2. Start Listing Activity\n3. Start Reflecting Activity\n4. Quit\nSelect a choice from the menu: ");
-            choice = Console.ReadLine();
-            if (choice == "1")
+            selection = Console.ReadLine();
+            if (selection == "1")
             {
                 Console.Clear();
                 breath.DisplayStartingMessage();
@@ -22,7 +22,7 @@ class Program
                 breath.DisplayEndingMessage();
                 breath.ShowSpinner(5);
             }
-            else if (choice == "2")
+            else if (selection == "2")
             {
                 Console.Clear();
                 list.DisplayStartingMessage();
@@ -30,7 +30,7 @@ class Program
                 list.DisplayEndingMessage();
                 list.ShowSpinner(5);
             }
-            else if (choice == "3")
+            else if (selection == "3")
             {
                 Console.Clear();
                 reflect.DisplayStartingMessage();

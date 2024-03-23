@@ -4,6 +4,7 @@ public class BreathingActivity : Activity
 {
     public BreathingActivity(string name, string description, int duration) : base(name, description, duration)
     {
+        // dummy variables
         name = "Breathing Activity";
         description = "fart";
         duration = 0;

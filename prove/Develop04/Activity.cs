@@ -26,9 +26,9 @@ public class Activity
     {
         Console.WriteLine($"Congratulations! you have completed {_duration} seconds of the {_name}!");
     }
-    public void ShowSpinner(int seconds)
+    public void ShowSpinner(int _seconds)
     {
-        for (int i = seconds; i > 0; i--)
+        for (int i = _seconds; i > 0; i--)
         {
             Console.Write("-");
             Thread.Sleep(333);

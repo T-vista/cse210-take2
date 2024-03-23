@@ -11,8 +11,8 @@ public class ListingActivity : Activity
     List<string> _prompts = new List<string>{"Who are people you appreciate?", "Who are people you have helped this week?", "When have you felt the Holy Ghost this month", "Who are some of your personal heros?"};
     public string GetRandomPrompt()
     {
-        Random rnd = new Random();
-        int r = rnd.Next(_prompts.Count);
+        Random rand = new Random();
+        int r = rand.Next(_prompts.Count);
         string s = _prompts[r];
         return s;
     }
