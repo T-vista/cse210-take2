@@ -1,5 +1,5 @@
 using System;
-
+//base class
 public abstract class Goal
 {
     public string _shortname;

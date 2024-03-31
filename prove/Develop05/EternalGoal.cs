@@ -19,6 +19,7 @@ public class EternalGoal : Goal
         string detail = $"[ ] {_shortname} ({_description})";
         return detail;
     }
+    // for saving the file
     public override string GetStringRepresentation()
     {
         return $"eternalgoal|{_shortname}|{_description}|{_points}";

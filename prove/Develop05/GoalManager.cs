@@ -10,9 +10,6 @@ public static class GoalManager
     {
         _score = _score + num;
     }
-    // public GoalManager()
-    // {
-    // }
     public static void Start()
     {
         string option = "0";

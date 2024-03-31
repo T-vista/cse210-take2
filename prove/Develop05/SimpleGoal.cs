@@ -31,6 +31,8 @@ public class SimpleGoal : Goal
     {
         return $"simplegoal|{_shortname}|{_description}|{_points}|{_isComplete}";
     }
+
+    // this one is for saving stuff
     public override string GetDetailsString()
     {
         string detail = "";
