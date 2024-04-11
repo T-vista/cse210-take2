@@ -2,13 +2,13 @@ using System;
 
 public class Item
 {
-    private string _name;
-    private string _description;
-    private int _goldValue;
-    public virtual string GetSaveValue(string name, string description, int goldValue)
+    protected string _name;
+    protected string _description;
+    protected int _goldValue;
+    public virtual string GetSaveValue()
     {
-        string value = $"{name}|{description}|{goldValue}";
-        return value;
+        return $"{_name}|{_description}|{_goldValue}";
+        //return value;
     }
     public Item(string name, string description, int goldValue)
     {

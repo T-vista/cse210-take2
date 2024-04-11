@@ -12,10 +12,10 @@ public static class Sheet
         $"Armor Class: {Char.GetArmorClass()} Speed: {Char.GetSpeed()} Initiative: {Character.FindModifier(Char.GetDEX())}\n" +
         "------------------------------------------------------------------------------\n" +
         $"Saving Throws: STR: {Character.FindModifier(Char.GetSTR())} DEX: {Character.FindModifier(Char.GetDEX())}" +
-        $"CON: {Character.FindModifier(Char.GetCON())} INT: {Character.FindModifier(Char.GetINT())}" +
-        $"WIS: {Character.FindModifier(Char.GetWIS())} CHA: {Character.FindModifier(Char.GetCHA())}\n\n" +
+        $" CON: {Character.FindModifier(Char.GetCON())} INT: {Character.FindModifier(Char.GetINT())}" +
+        $" WIS: {Character.FindModifier(Char.GetWIS())} CHA: {Character.FindModifier(Char.GetCHA())}\n" +
         "------------------------------------------------------------------------------\n" +
-        "Items\n\n" +
+        "Items:\n" +
         ""+
         "------------------------------------------------------------------------------" 
         );
